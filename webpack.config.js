@@ -9,6 +9,10 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
+  devServer: {
+    contentBase: './',
+    publicPath: '/dist/frontend'
+  },
   module: {
     rules: [
       {
@@ -18,6 +22,10 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       }
     ]
   },
