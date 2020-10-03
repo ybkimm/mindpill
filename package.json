@@ -11,7 +11,7 @@
     "client:build": "webpack",
     "typescript": "webpack-dev-server --mode development --open",
     "frontend:build": "webpack",
-    "frontend:style": "mkdir -p frontend/assets/css && node-sass --output-style compressed frontend/assets/scss/styles.scss > frontend/src/styles.css",
+    "frontend:style": "mkdir -p frontend/assets/css && node-sass --output-style compressed frontend/scss/styles.scss > frontend/src/styles.css",
     "frontend:build-prod": "cross-env BUILD_ENV=production webpack",
     "frontend:test": "jest",
     "backend:run": "make run"

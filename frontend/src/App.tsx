@@ -8,7 +8,8 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Join from './Pages/Join';
 import Chat from './Pages/Chat';
-import './styles.css';
+//import './styles.css';
+import './temp-style.css';
 
 const theme = createMuiTheme({
   typography: {
